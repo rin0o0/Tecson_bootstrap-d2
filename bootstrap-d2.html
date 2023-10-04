@@ -47,22 +47,50 @@
         <div class="container" style="height: 18rem;">
           <h2 class="display-5 text-center border-bottom border-1 border-black">DROPDOWN</h2>
           
-          <div class="dropdown d-flex justify-content-center mt-3" data-bs-theme="dark">
-            
-            <button class="btn btn-dark dropdown-toggle " data-bs-toggle="dropdown">Click Here for Pages</button>
-            
-            <ul class="dropdown-menu dropdown-menu-">
-              <li><button class="dropdown-item">Profile</button></li>
-              <li><button class="dropdown-item">Skills</button></li>
-              <li><button class="dropdown-item">Projects</button></li>
-            </ul>
-
-          </div>
-          
         </div>
       </section>
 
       <div class="divider"></div>  
+
+      <!-- OFFCANVAS -->
+      <section id="offcanvas-section" class="text-bg-light px-2 py-5">
+        <div class="container" style="height: 18rem;">
+          <h2 class="display-5 text-center border-bottom border-1 border-black">OFFCANVAS</h2>
+
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-primary" type="button" 
+                      data-bs-toggle="offcanvas" 
+                      data-bs-target="#offcanvasScrolling" 
+                      aria-controls="offcanvasScrolling">
+                Button Caller
+              </button>
+              
+              <div class="offcanvas offcanvas-start" data-bs-theme="dark" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>Try scrolling the rest of the page to see this option in action.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- Content goes here -->
+              </div>
+            </div>
+
+        </div>
+      </section>
+
+      <div class="divider"></div>
     </div>
 
     
