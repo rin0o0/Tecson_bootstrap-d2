@@ -1,3 +1,12 @@
 // CUSTOM VAR
-$primary: #F9A825;
-@import '../node_modules/bootstrap/scss/bootstrap'
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$new-colors: (
+    'newlydiscoveredcolor': #20c997,
+    'newlydiscoveredcolor2':rgb(107, 116, 22)
+);
+
+$theme-colors: map-merge($theme-colors, $new-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
